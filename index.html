@@ -16,7 +16,7 @@
       align-items: center;
       min-height: 100vh;
       text-align: center;
-      overflow: hidden;
+      padding: 1rem;
     }
 
     .card {
@@ -26,7 +26,7 @@
       padding: 3rem 2rem;
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
       max-width: 400px;
-      width: 90%;
+      width: 100%;
     }
 
     h1 {
@@ -35,7 +35,7 @@
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #ccc;
       margin-bottom: 2rem;
     }
@@ -44,8 +44,8 @@
       background: linear-gradient(135deg, #00c6ff, #0072ff);
       border: none;
       border-radius: 10px;
-      padding: 0.8rem 2rem;
-      font-size: 1.1rem;
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem;
       color: white;
       cursor: pointer;
       text-decoration: none;
@@ -60,8 +60,32 @@
 
     .footer {
       margin-top: 2rem;
-      font-size: 0.85rem;
+      font-size: 1rem;
       color: #aaa;
+    }
+
+    /* Scale everything up slightly on small screens */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.4rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+
+      .download-btn {
+        font-size: 1.3rem;
+        padding: 1.1rem 2.5rem;
+      }
+
+      .footer {
+        font-size: 1rem;
+      }
+
+      .card {
+        padding: 3.5rem 2.5rem;
+      }
     }
   </style>
 </head>
